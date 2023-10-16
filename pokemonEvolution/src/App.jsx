@@ -22,6 +22,11 @@ function App() {
   const [count, setCount] = useState(0);
   const currentPokemon = count < 18 ? Passerouge : count < 36 ? Braisillon : Flambusard;
 
+  const handleLevelUp = () => {
+    setLevel(count + 1)
+  }
+
+
   return (
     <>
       <div>
