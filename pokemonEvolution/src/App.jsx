@@ -1,20 +1,18 @@
 import './App.css'
-import ChampionList from './components/ChampionList'
-import ChampionCard from './components/championCard'
+import ChampionList from './components/champions/ChampionList'
+import ChampionCard from './components/champions/championCard'
 import { useState } from 'react';
 
 const Passerouge = {
-  image: "http://localhost:5174/assets/Passerouge.png",
+  image: "http://localhost:5173/assets/07.Passerouge.png",
   firstName: "Passerouge",
 }
-
 const Braisillon = {
-  image: "http://localhost:5174/assets/Braisillon.png",
+  image: "http://localhost:5173/assets/08.Braisillon.png",
   firstName: "Braisillon",
 }
-
 const Flambusard = {
-  image: "http://localhost:5174/assets/Flambusard.png",
+  image: "http://localhost:5173/assets/09.Flambusard.png",
   firstName: "Flambusard",
 }
 
@@ -24,33 +22,33 @@ function App() {
 
   const handleLevelUp = () => {
     setLevel(count + 1)
-
-    return (
-      <>
-        <div>
-          <ChampionCard champions={ChampionList} />
-        </div>
-
-        <div>
-          <img src={currentPokemon.image} alt={currentPokemon.firstName} />
-          <h1>{currentPokemon.firstName}</h1>
-          <p>{currentPokemon.firstName}</p>
-        </div >
-        <div className="card">
-          <button onClick={() => setCount(count + 1)}>
-            Level {count}
-          </button>
-        </div>
-
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            level of your pokemon is {count}
-          </button>
-        </div>
-
-      </>
-    )
   }
+
+  return (
+    <>
+      <div className='bothCard'>
+        <section>
+          <div>
+            <ChampionCard champions={ChampionList[0]} />
+          </div>
+        </section>
+        <section>
+          <div>
+            <img src={currentPokemon.image} alt={currentPokemon.firstName} />
+            <h1>{currentPokemon.firstName}</h1>
+            <p>{currentPokemon.firstName}</p>
+          </div >
+
+          <div className="card">
+            <button onClick={() => setCount((count) => count + 1)}>
+              level of your pokemon is {count}
+            </button>
+          </div>
+        </section >
+      </div>
+    </>
+  )
+
 }
 export default App;
 
