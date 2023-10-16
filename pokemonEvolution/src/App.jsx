@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import roucoups from './assets/Roucoups.png'
-import roucool from './assets/250px-Roucool.png'
-import roucarnage from './assets/roucarnage3.png'
+import roucool from './assets/Roucool.png'
+import roucarnage from './assets/roucarnage.png'
 
 function App() {
   const [count, setCount] = useState(0)
