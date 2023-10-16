@@ -1,8 +1,28 @@
+import { useState } from 'react';
+
+const Passerouge = {
+  image: "http://localhost:5174/assets/Passerouge.png",
+  firstName: "Passerouge",
+}
+
+const Braisillon = {
+  image: "http://localhost:5174/assets/Braisillon.png",
+  firstName: "Braisillon",
+}
+
+const Flambusard = {
+  image: "http://localhost:5174/assets/Flambusard.png",
+  firstName: "Flambusard",
+}
 import './App.css'
 import ChampionList from './components/ChampionList'
 import ChampionCard from './components/championCard'
 
 function App() {
+  const [count, setCount] = useState(0);
+  const currentPokemon = count < 18 ? Passerouge : count < 36 ? Braisillon : Flambusard;
+
+
   return (
     <>
       <div>
@@ -29,17 +49,21 @@ function App() {
         count < 36 ? <div> <img src={Crocogril} alt="Crocogril" /> <h1>Regarde je danse, je suis chaud</h1></div> :
         <div><img src={Flâmigator} alt="Flâmigator" /><h1>J'ai un oiseau en feu sur le nez, il me sert de micro dans l'une de mes attaques</h1></div>} */}
 
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          level of your pokemon is {count}
-        </button>
+      <div>
+        <img src={currentPokemon.image} alt={currentPokemon.firstName} />
+        <h1>{currentPokemon.firstName}</h1>
+        <p>{currentPokemon.firstName}</p>
+
+        <div className="card">
+          <button onClick={() => setCount(count + 1)}>
+            Level {count}
+          </button>
+        </div>
       </div>
-      </>
+    </>
   )
   
-  
-
 
 }
 
-export default App
+export default App;
