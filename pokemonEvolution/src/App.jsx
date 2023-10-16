@@ -1,19 +1,14 @@
-import { useState } from 'react'
 import './App.css'
-
-
-// pokemons de type vol !
-import roucoups from './assets/Roucoups.png'
-import roucool from './assets/250px-Roucool.png'
-import roucarnage from './assets/roucarnage3.png'
-
+import ChampionList from './components/ChampionList'
+import ChampionCard from './components/championCard'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-  <>
+    <>
+      <div>
+        <ChampionCard champions={ChampionList} />
 
+      </div>
       {/* {count < 18 ? <div>
         <img src={roucool} alt="Roucool" /> <h1>Roucool est votre ami</h1></div> :
         count < 36 ? <div> <img src={roucoups} alt="Roucoups" /> <h1>Roucoups est un compagnon fidèle</h1> </div> :
@@ -39,10 +34,12 @@ function App() {
           level of your pokemon is {count}
         </button>
       </div>
-
       </>
-  
   )
+  
+  
+
+
 }
 
 export default App
