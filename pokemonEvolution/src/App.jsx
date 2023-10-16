@@ -37,7 +37,8 @@ function App() {
             </button>
           </div>
         </div>
-        );
+      </div>
+    </>
+  )
 }
-
-        export default App;
+export default App;
