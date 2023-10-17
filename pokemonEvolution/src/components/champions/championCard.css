@@ -1,0 +1,12 @@
+.champsCard {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: lightcoral;
+}
+
+.address {
+    text-align: start;
+    list-style: none;
+}
