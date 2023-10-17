@@ -17,8 +17,6 @@ const Flambusard = {
   image: "http://localhost:5174/assets/Flambusard.png",
   firstName: "Flambusard",
 }
-import { useState } from 'react';
-
 
 function App() {
   const [count, setCount] = useState(0);
