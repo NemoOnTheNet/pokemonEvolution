@@ -6,6 +6,7 @@ import { useState } from 'react';
 import pokemonList from './PokemonList'
 import PokemonCard from './components/pokemon/pokemonCard';
 
+
 function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
   const pokeCard = pokemonList[pokemonIndex]
