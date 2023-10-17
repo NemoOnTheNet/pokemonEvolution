@@ -1,5 +1,3 @@
-function pokemonArray() {
-
 const pokemonList = [
     {
     name1: "Bulbizare",
@@ -98,47 +96,46 @@ const pokemonList = [
     imgSrc3: 'http://localhost:5174/assets/24.Tengalice.png', 
     },
     {
-        name1: "Roucool",
-        imgSrc1: 'http://localhost:5174/assets/25.Roucool.png',
-        evoLvl: 16,
+     name1: "Roucool",
+     imgSrc1: 'http://localhost:5174/assets/25.Roucool.png',
+     evoLvl: 16,
     
-        name2: "Roucoups",
-        imgSrc2: 'http://localhost:5174/assets/26.Roucoups.png',
-        evoLvl1: 32,
+     name2: "Roucoups",
+     imgSrc2: 'http://localhost:5174/assets/26.Roucoups.png',
+     evoLvl1: 32,
      
-         name3: "Roucarnage",
-         imgSrc3: 'http://localhost:5174/assets/27.roucarnage.png', 
+     name3: "Roucarnage",
+     imgSrc3: 'http://localhost:5174/assets/27.roucarnage.png', 
     },
     {
-        name1: "Soporifik",
-        imgSrc1: 'http://localhost:5174/assets/28.1.Soporifik.png',
-        evoLvl: 16,
+     name1: "Soporifik",
+     imgSrc1: 'http://localhost:5174/assets/28.1.Soporifik.png',
+     evoLvl: 16,
     
-        name3: "Hypnomade",
-        imgSrc3: 'http://localhost:5174/assets/28.Hypnomade.png',
+     name3: "Hypnomade",
+     imgSrc3: 'http://localhost:5174/assets/28.Hypnomade.png',
     },
     {
-        name1: "Lippouti",
-        imgSrc1: 'http://localhost:5174/assets/29.Lippouti.png',
-        evoLvl: 16,
+     name1: "Lippouti",
+     imgSrc1: 'http://localhost:5174/assets/29.Lippouti.png',
+     evoLvl: 16,
     
-        name2: "Lippoutou",
-        imgSrc2: 'http://localhost:5174/assets/30.Lippoutou.png', 
+     name2: "Lippoutou",
+     imgSrc2: 'http://localhost:5174/assets/30.Lippoutou.png', 
     },
     {
-        name1: "Scrutella",
-        imgSrc1: 'http://localhost:5174/assets/31.Scrutella.png',
-        evoLvl: 16,
+     name1: "Scrutella",
+     imgSrc1: 'http://localhost:5174/assets/31.Scrutella.png',
+     evoLvl: 16,
     
-        name2: "Mesmérella",
-        imgSrc2: 'http://localhost:5174/assets/32.Mesmérella.png',
-        evoLvl1: 32,
+     name2: "Mesmérella",
+     imgSrc2: 'http://localhost:5174/assets/32.Mesmérella.png',
+     evoLvl1: 32,
      
-         name3: "Sidérella",
-         imgSrc3: 'http://localhost:5174/assets/33.Siderella.png', 
+      name3: "Sidérella",
+      imgSrc3: 'http://localhost:5174/assets/33.Siderella.png', 
     },
-]
-}
+];
 
 
-export default pokemonArray;
+export default pokemonList;
