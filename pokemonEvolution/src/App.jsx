@@ -1,4 +1,6 @@
 import './App.css'
+import NavBar from './Components/navBar'
+import PokemonCard from './Components/pokemonImage'
 import ChampionList from './components/champions/ChampionList'
 import ChampionCard from './components/champions/championCard'
 import { useState } from 'react';
@@ -37,8 +39,14 @@ function App() {
     maxWidth: '75%',
     maxHeight: '75%',
   }
+  const [pokemonIndex, setPokemonIndex] = useState(0);
+  const imgClick = () => {
+    setPokemonIndex(pokemonIndex);
+  }
+  const pokemon = pokemonList[pokemonIndex]
 
   return (
+
     <div className='bothCard'>
       <div>
         <ChampionCard champions={ChampionList} />
@@ -50,11 +58,13 @@ function App() {
           <p>{currentPokemon.firstName}</p>
         </section>
       </div>
+      {/* <PokemonCard pokemon={pokemon} />
+      <NavBar pokemon={pokemonList} setPokemonIndex={setPokemonIndex} /> */}
 
     </div>
 
   )
 }
 
-;
+
 export default App;
