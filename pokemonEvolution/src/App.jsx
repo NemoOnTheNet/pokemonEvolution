@@ -1,29 +1,31 @@
-import { useState } from 'react'
 import './App.css'
-import roucoups from './assets/Roucoups.png'
-import roucool from './assets/250px-Roucool.png'
-import roucarnage from './assets/roucarnage3.png'
+import NavBar from './Components/navBar'
+import ChampionList from './components/champions/ChampionList'
+import ChampionCard from './components/champions/championCard'
+import { useState } from 'react';
+import pokemonList from './PokemonList'
+import PokemonCard from './components/pokemon/pokemonCard';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [pokemonIndex, setPokemonIndex] = useState(0);
+  const pokeCard = pokemonList[pokemonIndex]
+  const imgClick = () => {
+    setPokemonIndex(pokemonIndex);
+  }
   return (
-    <>
+    <div className='bothCard'>
       <div>
+        <ChampionCard champions={ChampionList[0]} />
       </div>
-      {count < 18 ? <div>
-        <img src={roucool} alt="" /> <h1>Roucool est votre ami</h1></div> :
-        count < 36 ? <div> <img src={roucoups} alt="" /> <h1>Roucoups est un compagnon fidèle</h1> </div> :
-          <div><img src={roucarnage} alt="" /> <h1>Roucarnage est le maitre des cieux.</h1> </div>}
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          level of your pokemon is {count}
-        </button>
+      <div className='pokeNAv'>
+        <PokemonCard pokemons={pokeCard} />
+        <div>
+          <NavBar className='navBar' pokemons={pokemonList} setPokemonIndex={setPokemonIndex} />
+        </div>
       </div>
+    </div>
 
-
-    </>
   )
-}
 
-export default App
+}
+export default App;
