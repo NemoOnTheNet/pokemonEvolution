@@ -1,19 +1,52 @@
-function PokemonList() {
+function pokemonArray() {
 
-const PokemonList = [
-    {id: 1, name: 'Salamèche', Image: './assets/Salamèche.png', type: "feu", level16: "./assets/Reptincel.png", level36: "./assets/Dracaufeu.png"},
-    {id: 2, name: 'Héricendre', Image: './assets/Héricendre.png', type: "feu", level17: "./assets/Feurisson", level36: "./assets/Typhlosion.png"},
-    {id: 3, name:'Chochodile', Image: './assets/Chochodile.png', type: "feu", level16: "./assets/Crocogril", level36: "./assets/Flâmigator.png"},
-    {id: 4, name:'Roucool', Image: './assets/250-Roucool.png', type: "vol", level18: "./assets/Roucoups.png", level36: "./assets/roucarnage3.png"},
-    {id: 5, name: 'bulbizarre', Image:'./assets/bulbizarre.png', type:"plante", level16: "./assets/Herbizarre.png", level},
-    {id: 6, name: , Image: , type:},
-    {id: 7, name: , Image: , type:},
-    {id: 8, name: , Image: , type:},
-    {id: 9, name: , Image: , type:},
-    {id: 10, name: , Image: , type:},
-    {id: 11, name: , Image: , type:},
-    {id: 12, name: , Image: , type:},
-];
+const pokemonList = [
+{
+    name1: "Roucool",
+    imgSrc1: '',
+evoLvl: 18,
+
+    name2: "Roucoups",
+    imgSrc2: '',
+evoLvl1: 36,
+
+    name3: "Roucarnage",
+    imgSrc3: '',
+},
+{
+    name1: "Soporifik",
+    imgSrc1: './assets/Soporifik.webp',
+    evoLvl: 26,
+
+
+    name2: "Hypnomade",
+    imgSrc2: './assets/Hypnomade.webp',
+
+},
+{
+    name1: "Scrutella",
+    imgSrc1: './assets/Scutella.webp',
+    evoLvl: 32,
+
+    name2: "Mesmérella",
+   imgSrc2: './assets/Mesmérella.webp',
+   evoLvl1: 41,
+
+    name3: "Sidérella",
+    imgSrc3: './assets/Sidérella.webp',
+},
+{
+    name1: "Lippouti",
+    imgSrc1: './assets/lippouti.webp',
+    evoLvl: 30,
+
+    name2: "Lippoutou",
+    imgSrc2: "./assets/lippoutou.webp",
+
+
+},
+]
 }
 
-export default PokemonList;
+
+export default pokemonArray;
