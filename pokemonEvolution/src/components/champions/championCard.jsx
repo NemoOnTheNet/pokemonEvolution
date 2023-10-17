@@ -1,9 +1,6 @@
 import './championCard.css'
-import { Fragment } from "react";
-
 
 const ChampionCard = ({ champions }) => {
-    console.log(champions);
     return (
         <aside className="champsCard">
             <img src={champions.image} alt={champions.id} />

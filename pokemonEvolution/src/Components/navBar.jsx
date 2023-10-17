@@ -1,18 +1,15 @@
 import React from "react";
 
 
-function NavBar ({pokemon, setPokemonIndex}) {
 
-
+function NavBar({ pokemons, setPokemonIndex }) {
   return (
-
-<>
-{pokemon.map((pokemon, index) => (
-<button key={index}  onClick={() => setPokemonIndex(index)}>{pokemon.name}</button>
-   
-))}
-</>
-      )
+    <>
+      {pokemons.map((pokemon, index) =>
+        <button key={index} onClick={() => setPokemonIndex(index)}>{pokemon.name1}</button>
+      )}
+    </>
+  )
 }
 
-export default NavBar
+export default NavBar;
